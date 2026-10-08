@@ -132,3 +132,10 @@ html,body{max-width:100%;overflow-x:clip}
  .hero-stamp{width:88px;height:88px;font-size:10px}
  .manifesto-body h2{font-size:32px}
 }
+
+/* Móvil: retirar únicamente elementos decorativos, mantener menú accesible */
+@media(max-width:800px){
+ .cap-symbol,.hero-stamp,.eyebrow .dot{display:none!important}
+ .nav-cta span,.hero-actions .button span,.hero-actions .text-link span{display:none!important}
+ .nav-cta,.hero-actions .button{gap:0}
+}
