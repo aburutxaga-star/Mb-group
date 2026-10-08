@@ -27,3 +27,6 @@
 
 /* Identidad Natur3: naranja propio en el titular de la sección de marca */
 .brand-feature .feature-content h2 em{color:#f26316}
+
+/* Natur3: logotipo protagonista, proporción original y separación limpia */
+.brand-feature .feature-content .brand-lockup-logo{width:100%;max-width:440px;margin:32px 0 30px;padding:0;display:flex;align-items:flex-start;justify-content:center;gap:15px;font-size:initial;letter-spacing:normal;line-height:normal;overflow:visible}.brand-feature .brand-lockup-logo img{display:block;width:100%;max-width:440px;height:auto;max-height:none;aspect-ratio:1127/436;object-fit:contain;object-position:left center;flex-shrink:0}.brand-feature .brand-lockup-logo small{margin:0;color:#8e633e;font-size:10px;line-height:1.4;letter-spacing:.13em}@media(max-width:800px){.brand-feature .feature-content .brand-lockup-logo{max-width:360px;margin:28px 0}.brand-feature .brand-lockup-logo img{max-width:360px}}@media(max-width:480px){.brand-feature .feature-content .brand-lockup-logo{max-width:100%;margin:24px 0}.brand-feature .brand-lockup-logo img{width:100%;max-width:100%;height:auto}}
