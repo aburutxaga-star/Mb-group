@@ -30,3 +30,21 @@
 
 /* Natur3: logotipo protagonista, proporción original y separación limpia */
 .brand-feature .feature-content .brand-lockup-logo{width:100%;max-width:440px;margin:32px 0 30px;padding:0;display:flex;align-items:flex-start;justify-content:center;gap:15px;font-size:initial;letter-spacing:normal;line-height:normal;overflow:visible}.brand-feature .brand-lockup-logo img{display:block;width:100%;max-width:440px;height:auto;max-height:none;aspect-ratio:1127/436;object-fit:contain;object-position:left center;flex-shrink:0}.brand-feature .brand-lockup-logo small{margin:0;color:#8e633e;font-size:10px;line-height:1.4;letter-spacing:.13em}@media(max-width:800px){.brand-feature .feature-content .brand-lockup-logo{max-width:360px;margin:28px 0}.brand-feature .brand-lockup-logo img{max-width:360px}}@media(max-width:480px){.brand-feature .feature-content .brand-lockup-logo{max-width:100%;margin:24px 0}.brand-feature .brand-lockup-logo img{width:100%;max-width:100%;height:auto}}
+
+/* Portfolio editorial: imágenes integradas, encuadre uniforme y lectura clara */
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);align-items:stretch}
+.portfolio-card{min-width:0;overflow:hidden;background:#fff;border:1px solid #e5e8e8;border-radius:14px;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.portfolio-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.09)}
+.portfolio-image,.portfolio-image.light,.portfolio-image.dark-img,.portfolio-image.cream{position:relative;width:100%;height:auto;aspect-ratio:4/3;overflow:hidden;display:block;background:#f0f1ef}
+.portfolio-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease;transform:scale(1)}
+.portfolio-card:hover .portfolio-image img{transform:scale(1.035)}
+.portfolio-card:nth-child(1) .portfolio-image img{object-position:center center}
+.portfolio-card:nth-child(2) .portfolio-image img{object-position:center center}
+.portfolio-card:nth-child(3) .portfolio-image img{object-position:center center}
+.portfolio-text{padding:26px clamp(20px,2.2vw,32px) 30px;display:flex;flex-direction:column;flex:1;gap:0}
+.portfolio-text span{color:#168f96}
+.portfolio-text h3{font-size:clamp(23px,2.15vw,30px);line-height:1.15;letter-spacing:-.035em;margin:12px 0}
+.portfolio-text p{font-size:15px;line-height:1.6;margin:0;color:#62696a}
+@media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}.portfolio-card:last-child .portfolio-image{height:100%;aspect-ratio:auto;min-height:270px}.portfolio-card:last-child .portfolio-text{justify-content:center}}
+@media(max-width:620px){.portfolio-grid{grid-template-columns:1fr;gap:20px}.portfolio-card:last-child{grid-column:auto;display:flex}.portfolio-card:last-child .portfolio-image{height:auto;min-height:0;aspect-ratio:4/3}.portfolio-image{aspect-ratio:4/3}.portfolio-text{padding:22px 23px 27px}.portfolio-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.portfolio-card,.portfolio-image img{transition:none}.portfolio-card:hover,.portfolio-card:hover .portfolio-image img{transform:none}}
