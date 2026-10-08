@@ -48,3 +48,11 @@
 @media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}.portfolio-card:last-child .portfolio-image{height:100%;aspect-ratio:auto;min-height:270px}.portfolio-card:last-child .portfolio-text{justify-content:center}}
 @media(max-width:620px){.portfolio-grid{grid-template-columns:1fr;gap:20px}.portfolio-card:last-child{grid-column:auto;display:flex}.portfolio-card:last-child .portfolio-image{height:auto;min-height:0;aspect-ratio:4/3}.portfolio-image{aspect-ratio:4/3}.portfolio-text{padding:22px 23px 27px}.portfolio-card:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.portfolio-card,.portfolio-image img{transition:none}.portfolio-card:hover,.portfolio-card:hover .portfolio-image img{transform:none}}
+
+/* Natur3 logo: tamaño editorial equilibrado en el bloque de marca */
+.brand-feature .feature-content .brand-lockup-logo{width:100%;max-width:310px;margin:24px 0 26px;gap:9px;align-items:flex-start}
+.brand-feature .brand-lockup-logo img{width:100%;max-width:310px;height:auto;max-height:none;aspect-ratio:281.42/108.6;object-fit:contain;object-position:left center}
+.brand-feature .brand-lockup-logo small{font-size:9px;line-height:1.45;letter-spacing:.12em;margin:0}
+@media(min-width:1200px){.brand-feature .feature-content .brand-lockup-logo,.brand-feature .brand-lockup-logo img{max-width:340px}}
+@media(max-width:800px){.brand-feature .feature-content .brand-lockup-logo,.brand-feature .brand-lockup-logo img{max-width:290px}}
+@media(max-width:480px){.brand-feature .feature-content .brand-lockup-logo{max-width:min(76vw,265px);margin:22px 0 24px}.brand-feature .brand-lockup-logo img{max-width:100%}}
