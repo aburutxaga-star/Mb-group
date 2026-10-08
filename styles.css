@@ -139,3 +139,5 @@ html,body{max-width:100%;overflow-x:clip}
  .nav-cta span,.hero-actions .button span,.hero-actions .text-link span{display:none!important}
  .nav-cta,.hero-actions .button{gap:0}
 }
+
+@media(max-width:800px){.mobile-decorative-arrow{display:none!important}}
